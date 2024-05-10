@@ -266,7 +266,8 @@ class SampleApp(tk.Tk):
         work_name=work_name
         index=index
         ToDelete_file_path=self.items[index][2]
-        os.remove(ToDelete_file_path)
+        if os.path.exists(ToDelete_file_path):
+            os.remove(ToDelete_file_path)
         self.items.pop(index)
         self.write()
         self.show_UpdateCard()
