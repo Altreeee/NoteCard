@@ -74,7 +74,7 @@ class CustomNotebook(ScrolledText):
 class SampleApp(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
-        self.title("中央显示界面")
+        self.title("NoteCard")
 
         # 设置窗口大小
         self.geometry("600x500")
